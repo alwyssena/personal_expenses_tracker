@@ -1,0 +1,54 @@
+###
+POST http://localhost:5000/api/auth/register
+Content-Type: application/json
+
+{
+  "name": "John kDoe",
+  "email": "johdn@example.com",
+  "password": "password123"
+}
+
+
+###
+POST http://localhost:5000/api/auth/login
+Content-Type: application/json
+
+{
+  
+  "email": "johdn@example.com",
+  "password": "password123"
+}
+
+
+
+
+###
+POST http://localhost:5000/api/expenses/add
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NjZiY2VmOGQ1NzZlNjNkNWYxYjc1YiIsImlhdCI6MTczNDc5NzUyNiwiZXhwIjoxNzM0ODAxMTI2fQ.MoP75et3fo0HCVXSnTrM5rNj1EvfGL1PNJ3K0hvxOIE
+
+{
+  "title": "Groceries",
+  "amount": 150,
+  "date": "2024-12-21",
+  "category": "Food"
+}
+
+###
+PUT http://localhost:5000/api/expenses/6766e93d7a33102b0873ef4f
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NjZiY2VmOGQ1NzZlNjNkNWYxYjc1YiIsImlhdCI6MTczNDc5NzUyNiwiZXhwIjoxNzM0ODAxMTI2fQ.MoP75et3fo0HCVXSnTrM5rNj1EvfGL1PNJ3K0hvxOIE
+
+
+{
+  "title": "Groceries Updated",
+  "amount": 200,
+  "date": "2024-12-22"
+}
+
+
+
+
+###
+DELETE http://localhost:5000/api/expenses/6766e93d7a33102b0873ef4f
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3NjZiY2VmOGQ1NzZlNjNkNWYxYjc1YiIsImlhdCI6MTczNDc5NzUyNiwiZXhwIjoxNzM0ODAxMTI2fQ.MoP75et3fo0HCVXSnTrM5rNj1EvfGL1PNJ3K0hvxOIE
