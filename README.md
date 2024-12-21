@@ -21,7 +21,7 @@ Setup Instructions
 
 1. Clone the Repository
    
-git clone https://github.com/your-username/expense-tracker.git
+git clone https://github.com/alwyssena/personal_expenses_tracker.git
 cd my expenses
 
 3. Install Dependencies
